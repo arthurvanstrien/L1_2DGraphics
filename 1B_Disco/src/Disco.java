@@ -38,10 +38,10 @@ public class Disco extends JPanel implements ActionListener {
         //grapics2D.scale(10, 10);
         //grapics2D.drawString("Dambord", 10, 10);
 
-        for (int i = 0; i < 15; i++) {
+        for (int i = 0; i < 20; i++) {
             positionY = 0;
 
-            for (int j = 0; j < 30; j++) {
+            for (int j = 0; j < 40; j++) {
                 randomNumber = Math.random();
                 Color randomColor = Color.getHSBColor((float) randomNumber, 1, 1);
 
