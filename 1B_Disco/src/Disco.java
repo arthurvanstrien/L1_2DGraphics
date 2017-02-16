@@ -32,11 +32,11 @@ public class Disco extends JPanel implements ActionListener {
 
 
         super.paintComponent(g);
-        Graphics2D grapics2D = (Graphics2D) g;
+        Graphics2D graphics2D = (Graphics2D) g;
 
-        //grapics2D.drawLine(10, 30, 100, 100);
-        //grapics2D.scale(10, 10);
-        //grapics2D.drawString("Dambord", 10, 10);
+        //graphics2D.drawLine(10, 30, 100, 100);
+        //graphics2D.scale(10, 10);
+        //graphics2D.drawString("Dambord", 10, 10);
 
         for (int i = 0; i < 20; i++) {
             positionY = 0;
@@ -45,8 +45,8 @@ public class Disco extends JPanel implements ActionListener {
                 randomNumber = Math.random();
                 Color randomColor = Color.getHSBColor((float) randomNumber, 1, 1);
 
-                grapics2D.setColor(randomColor);
-                grapics2D.fillRect(positionY, positionX, sizeY, sizeX);
+                graphics2D.setColor(randomColor);
+                graphics2D.fillRect(positionY, positionX, sizeY, sizeX);
 
                 positionY = positionY + sizeY;
             }
