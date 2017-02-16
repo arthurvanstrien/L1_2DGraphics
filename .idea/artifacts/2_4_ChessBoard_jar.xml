@@ -3,6 +3,9 @@
     <output-path>$PROJECT_DIR$/out/artifacts/2_4_ChessBoard_jar</output-path>
     <root id="archive" name="2.4_ChessBoard.jar">
       <element id="module-output" name="2.4_ChessBoard" />
+      <element id="archive" name="2.5_Moon.jar">
+        <element id="module-output" name="2.5_Moon" />
+      </element>
     </root>
   </artifact>
 </component>
