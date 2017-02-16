@@ -8,7 +8,7 @@ import java.awt.event.ActionListener;
 
 public class Disco extends JPanel implements ActionListener {
     public static void main (String[] args) {
-        JFrame frame = new JFrame("MyFirstJava2DApplication");
+        JFrame frame = new JFrame("Disco");
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         frame.setMinimumSize(new Dimension(800, 600));
         frame.setExtendedState(frame.getExtendedState() | JFrame.MAXIMIZED_BOTH);
