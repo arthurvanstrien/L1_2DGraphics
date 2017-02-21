@@ -44,13 +44,17 @@ public class AngledSquare extends JPanel
     {
         super.paintComponent(g);
         Graphics2D graphics2D = (Graphics2D) g;
+
+        //Draw X and Y axle.
+        graphics2D.setColor(Color.RED);
+        graphics2D.drawLine((getWidth() / 2), 0, (getWidth() / 2), getHeight());
+        graphics2D.drawLine(0, (getHeight() / 2), getWidth(), (getHeight() / 2));
+        graphics2D.setColor(Color.BLACK);
+
+
         AffineTransform affineTransform = new AffineTransform();
         affineTransform.translate((getWidth() / 2), (getHeight() / 2) - c);
         affineTransform.rotate(angle);
         graphics2D.fill(affineTransform.createTransformedShape(new Rectangle2D.Double(0, 0, 200, 200)));
-
-        graphics2D.setColor(Color.RED);
-        graphics2D.drawLine((getWidth() / 2), 0, (getWidth() / 2), getHeight());
-        graphics2D.drawLine(0, (getHeight() / 2), getWidth(), (getHeight() / 2));
     }
 }
