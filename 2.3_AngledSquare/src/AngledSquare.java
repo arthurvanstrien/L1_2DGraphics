@@ -5,7 +5,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.geom.AffineTransform;
 import java.awt.geom.Rectangle2D;
-import java.lang.Math.*;
 
 /**
  * Created by Arthur on 16-2-2017.
