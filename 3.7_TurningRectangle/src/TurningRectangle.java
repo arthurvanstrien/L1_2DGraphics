@@ -9,8 +9,6 @@ import java.awt.geom.Rectangle2D;
 public class TurningRectangle extends JPanel
 {
     double angle;
-    int screenWidth;
-    int screenHeight;
 
     public static void main(String[] args)
     {
@@ -25,8 +23,6 @@ public class TurningRectangle extends JPanel
     public TurningRectangle()
     {
         angle = Math.toRadians(45);
-        screenHeight = getHeight();
-        screenWidth = getWidth();
     }
 
     public void paintComponent(Graphics g)
@@ -37,9 +33,5 @@ public class TurningRectangle extends JPanel
         affineTransform.translate((getWidth() / 2), (getHeight() / 2));
         affineTransform.rotate(angle);
         graphics2D.fill(affineTransform.createTransformedShape(new Rectangle2D.Double(0, 0, 200, 200)));
-
-
-        graphics2D.setColor(Color.YELLOW);
-        //graphics2D.fillRect(100, 100, 100, 100);
     }
 }
