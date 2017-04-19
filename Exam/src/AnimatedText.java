@@ -31,13 +31,13 @@ public class AnimatedText extends JPanel implements ActionListener, MouseListene
     public AnimatedText() {
         addMouseMotionListener(this);
         addMouseListener(this);
-        scale = 175;
+        scale = 75;
         shiftHueValue = (float) 1 / 255;
         hueLeft = 0;
         hueRight = shiftHueValue * 127;
         buttonPressed = 0;
-        positionX = 300; //Start position X
-        positionY = 300; //Start position Y
+        positionX = 200; //Start position X
+        positionY = 200; //Start position Y
         counter = 0;
         Timer timer = new Timer(1000 / 60, this);
         timer.start();
@@ -91,14 +91,14 @@ public class AnimatedText extends JPanel implements ActionListener, MouseListene
     {
         if(event.getButton() == 3)
         {
-            if(scale == 100)
-                scale = 175;
-            else if (scale == 175)
-                scale = 250;
-            else if (scale == 250)
+            if(scale == 50)
+                scale = 75;
+            else if (scale == 75)
                 scale = 100;
+            else if (scale == 100)
+                scale = 50;
             else
-                scale = 100;
+                scale = 50;
         }
     }
 
